@@ -11,32 +11,34 @@
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_centerInParent="true"
-        android:src="@drawable/ic_launcher_background">
+        android:src="@drawable/chaticon">
 
     </ImageView>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="from"
-        android:textColor="#1E1D1D"
-        android:layout_centerHorizontal="true"
         android:layout_above="@+id/maintext"
-        android:layout_marginBottom="5dp">
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:text="from"
+        android:fontFamily="@font/raleway"
+        android:textColor="@color/darkGrey">
 
     </TextView>
 
     <TextView
+        android:id="@+id/maintext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Team Gojeta"
         android:layout_alignParentBottom="true"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:id="@+id/maintext"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="30dp"
-        android:textColor="#25d366">
+        android:text="Team Gojeta"
+        android:fontFamily="@font/raleway"
+        android:textColor="@color/darkBlue"
+        android:textSize="18sp"
+        android:textStyle="bold">
 
     </TextView>
 

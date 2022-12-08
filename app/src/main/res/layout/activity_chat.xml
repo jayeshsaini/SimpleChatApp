@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:layout_marginTop="0dp"
-        android:background="#075e54"
+        android:background="@color/darkBlue"
         android:id="@+id/toolbar">
 
         <RelativeLayout
@@ -24,7 +24,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Next Chat"
+                android:text="InstaChat"
                 android:textSize="20sp"
                 android:id="@+id/myapptext"
                 android:textStyle="bold"
@@ -40,10 +40,10 @@
         android:layout_height="?attr/actionBarSize"
         android:id="@+id/include"
         android:layout_below="@+id/toolbar"
-        app:tabTextColor="#77a3a7"
-        app:tabSelectedTextColor="@color/white"
+        app:tabTextColor="@color/white"
+        app:tabSelectedTextColor="@color/offWhite"
         app:tabIndicatorColor="@color/white"
-        android:backgroundTint="#075e54"
+        android:backgroundTint="@color/darkBlue"
         app:tabIndicatorHeight="3dp"
         android:layout_marginTop="0dp">
 

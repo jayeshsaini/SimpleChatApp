@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f0"
+    tools:context=".SpecificChat">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginTop="0dp"
+        android:background="@color/darkBlue"
+        android:id="@+id/toolbarOfSpecificChat">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+
+            <ImageButton
+                android:id="@+id/backButtonOfSpecificChat"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_baseline_arrow_back_24">
+
+            </ImageButton>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_toRightOf="@+id/backButtonOfSpecificChat"
+                android:id="@+id/cardviewofSpecificUser"
+                android:layout_centerVertical="true"
+                app:cardCornerRadius="35dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/defaultprofile"
+                    android:id="@+id/specificUserImageInImageView"
+                    android:scaleType="centerCrop">
+
+                </ImageView>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name of User"
+                android:textSize="20sp"
+                android:id="@+id/nameSpecificUser"
+                android:layout_toRightOf="@+id/cardviewofSpecificUser"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:textStyle="bold"
+                android:textColor="@color/white">
+
+            </TextView>
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RVofSpecificChat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/getMessage"
+        android:layout_below="@+id/toolbarOfSpecificChat"
+        android:padding="5dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Type a new message"
+        android:background="@drawable/messagebackground"
+        android:backgroundTint="#D4EEF6"
+        android:layout_marginStart="5dp"
+        android:paddingEnd="10dp"
+        android:layout_marginBottom="5dp"
+        android:textSize="18sp"
+        android:textAlignment="textStart"
+        android:textColorHint="@color/grey"
+        android:paddingStart="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="55dp"
+        android:textColor="@color/black"
+        android:id="@+id/getMessage">
+
+    </EditText>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:id="@+id/CVSendMessage"
+        android:layout_toEndOf="@+id/getMessage"
+        android:layout_marginStart="-50dp"
+        android:layout_marginBottom="5dp"
+        android:backgroundTint="#FFFFFF"
+        android:layout_alignParentBottom="true"
+        app:cardCornerRadius="45dp">
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:id="@+id/sendMessageIB"
+            android:src="@drawable/send1"
+            android:backgroundTint="@android:color/transparent"
+            android:background="@android:color/transparent"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop">
+
+        </ImageButton>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

@@ -10,13 +10,14 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="30sp"
-        android:text="Save your Profile"
         android:layout_above="@+id/getuserimage"
+        android:layout_centerHorizontal="true"
         android:layout_marginBottom="30dp"
-        android:textColor="#25d366"
-        android:textStyle="bold"
-        android:layout_centerHorizontal="true">
+        android:text="Save your Profile"
+        android:fontFamily="@font/raleway"
+        android:textColor="@color/blue"
+        android:textSize="30sp"
+        android:textStyle="bold">
 
     </TextView>
 
@@ -33,7 +34,7 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@drawable/ic_launcher_background"
+            android:src="@drawable/defaultprofile"
             android:id="@+id/getuserimageinimageview"
             android:scaleType="centerCrop">
 
@@ -42,14 +43,16 @@
     </androidx.cardview.widget.CardView>
 
     <EditText
+        android:id="@+id/getusername"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:inputType="textCapWords"
-        android:hint="Enter your Name here"
         android:layout_centerInParent="true"
-        android:id="@+id/getusername"
         android:layout_marginLeft="70dp"
-        android:layout_marginRight="70dp">
+        android:layout_marginRight="70dp"
+        android:hint="Enter your Name here"
+        android:textColorHint="@color/grey"
+        android:textColor="@color/black"
+        android:inputType="textCapWords">
 
     </EditText>
 
@@ -62,7 +65,7 @@
         android:textColor="@color/white"
         android:text="Save Profile"
         android:layout_marginTop="20dp"
-        android:background="#25d366">
+        android:background="@color/darkBlue">
 
     </android.widget.Button>
 

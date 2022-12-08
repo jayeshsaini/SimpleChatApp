@@ -8,12 +8,12 @@
     tools:context=".otpAuthentication">
 
     <ImageView
+        android:id="@+id/logo"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:src="@drawable/ic_launcher_background"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="40dp"
-        android:id="@+id/logo">
+        android:src="@drawable/chaticon">
 
     </ImageView>
 
@@ -21,11 +21,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Enter the OTP you received"
+        android:fontFamily="@font/raleway"
         android:textSize="20sp"
         android:textAlignment="center"
         android:textStyle="bold"
         android:padding="20dp"
-        android:textColor="#6e6e6e"
+        android:textColor="@color/blue"
         android:layout_below="@+id/logo"
         android:id="@+id/textheading">
 
@@ -38,7 +39,8 @@
         android:layout_below="@id/textheading"
         android:layout_marginLeft="120dp"
         android:layout_marginRight="120dp"
-        android:hint="Enter the OTP here...."
+        android:hint="Enter OTP here...."
+        android:textColorHint="@color/grey"
         android:textColor="@color/black"
         android:id="@+id/getotp"
         android:textAlignment="center"
@@ -53,24 +55,24 @@
         android:id="@+id/changenumber"
         android:layout_below="@+id/getotp"
         android:layout_centerHorizontal="true"
-        android:textColor="@color/black"
+        android:textColor="@color/blue"
         android:textSize="18sp"
         android:layout_marginTop="15dp">
 
     </TextView>
 
     <android.widget.Button
+        android:id="@+id/verifyotp"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
         android:layout_below="@+id/changenumber"
-        android:id="@+id/verifyotp"
         android:layout_centerHorizontal="true"
-        android:textColor="@color/white"
-        android:paddingLeft="40dp"
-        android:text="Verify OTP"
         android:layout_marginTop="50dp"
+        android:background="@color/darkBlue"
+        android:paddingLeft="40dp"
         android:paddingRight="40dp"
-        android:background="#25d366">
+        android:text="Verify OTP"
+        android:textColor="#FADBD8">
 
     </android.widget.Button>
 

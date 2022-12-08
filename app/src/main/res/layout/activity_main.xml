@@ -8,12 +8,12 @@
     tools:context=".MainActivity">
 
     <ImageView
+        android:id="@+id/logo"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:src="@drawable/ic_launcher_background"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="40dp"
-        android:id="@+id/logo">
+        android:src="@drawable/chaticon">
 
     </ImageView>
 
@@ -21,19 +21,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="App will send OTP to the below Entered Number"
+        android:fontFamily="@font/raleway"
         android:textSize="20sp"
         android:textAlignment="center"
         android:textStyle="bold"
         android:padding="20dp"
-        android:textColor="#6e6e6e"
+        android:textColor="@color/blue"
         android:layout_below="@+id/logo"
         android:id="@+id/textheading">
 
     </TextView>
-
-
-
-
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -58,33 +55,34 @@
     </com.hbb20.CountryCodePicker>
 
     <EditText
+        android:id="@+id/getphonenumber"
         android:layout_width="match_parent"
         android:layout_height="50dp"
+        android:layout_below="@id/centerhorizontalline"
         android:layout_marginLeft="70dp"
-        android:layout_marginRight="70dp"
-        android:id="@+id/getphonenumber"
-        android:hint="Enter your Number here"
-        android:textAlignment="center"
-        android:inputType="number"
-        android:textColor="@color/black"
         android:layout_marginTop="10dp"
-        android:layout_below="@id/centerhorizontalline">
+        android:layout_marginRight="70dp"
+        android:hint="Enter your Number here"
+        android:textColorHint="@color/grey"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/black">
 
     </EditText>
 
     <android.widget.Button
+        android:id="@+id/sendotpbutton"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
         android:layout_below="@+id/getphonenumber"
-        android:id="@+id/sendotpbutton"
-        android:text="Send OTP"
-        android:textSize="15sp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
-        android:textColor="@color/white"
+        android:background="@color/darkBlue"
         android:paddingLeft="40dp"
         android:paddingRight="40dp"
-        android:background="#25d366">
+        android:text="Send OTP"
+        android:textColor="#FADBD8"
+        android:textSize="15sp">
 
     </android.widget.Button>
 
