@@ -117,6 +117,8 @@ public class SpecificChat extends AppCompatActivity {
                     messagesArrayList.add(messages);
                 }
                 messagesAdapter.notifyDataSetChanged();
+
+                messageRV.setAdapter(messagesAdapter);
             }
 
             @Override
