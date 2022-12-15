@@ -107,8 +107,8 @@ public class ChatActivity extends AppCompatActivity {
     }
 
     @Override
-    protected void onStop() {
-        super.onStop();
+    public void onDestroy() {
+        super.onDestroy();
         DocumentReference documentReference = firebaseFirestore.collection("Users").document(firebaseAuth.getUid());
         documentReference.update("status","Offline").addOnSuccessListener(new OnSuccessListener<Void>() {
             @Override

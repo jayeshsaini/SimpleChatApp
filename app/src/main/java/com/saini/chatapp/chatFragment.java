@@ -70,7 +70,7 @@ public class chatFragment extends Fragment {
                 noteViewHolder.itemView.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        Toast.makeText(getActivity(),"Item is clicked",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getActivity(),"Opening chat",Toast.LENGTH_SHORT).show();
                         Intent intent=new Intent(getActivity(),SpecificChat.class);
                         intent.putExtra("name",firebasemodel.getName());
                         intent.putExtra("receiveruid",firebasemodel.getUid());
